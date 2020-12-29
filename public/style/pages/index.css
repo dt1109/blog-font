@@ -15,3 +15,27 @@
   display: inline-block;
   padding: 0 10px;
 }
+#nextdiv{
+  position: relative;
+}
+.rotued{
+  width: 100px;
+  height: 100px;
+  transform: rotate(666turn);
+  transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 59s;
+  transition-timing-function: cubic-bezier(.34,0,.84,1);
+  /* border-radius: 50%; */
+  position: fixed;
+  top:50%;
+  left: 0;
+}
+.rotued:hover{
+  transform: rotate(666turn);
+  transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 59s;
+  transition-timing-function: cubic-bezier(.34,0,.84,1);
+  border-radius: 50%;
+}

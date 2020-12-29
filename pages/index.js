@@ -37,10 +37,15 @@ const Home = (list) => {
   });
   return (
     <>
+    <div id="nextdiv">
+
       <Head>
         <title>Home</title>
       </Head>
       <Header />
+      <div className="rotued" title="this for baiduzpl">
+        <img src="https://www.baidu.com/img/fddong_e2dd633ee46695630e60156c91cda80a.gif" alt="" style={{width:'100%',height:'100%'}}/>
+      </div>
       <Row className="comm-main" type="flex" justify="center">
         <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}  >
             <List header={<div>最新的动态</div>} itemLayout="vertical" dataSource={mylist}  renderItem={item=>(
@@ -67,6 +72,7 @@ const Home = (list) => {
         </Col>
       </Row>
       <Footer/>
+      </div>
     </>
   )
 }

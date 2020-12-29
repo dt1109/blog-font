@@ -2,5 +2,7 @@
   text-align: center;
   width: 100%;
   padding: 1rem;
-  color:#888;
+  color:rgb(245, 237, 237);
+  background:#333333;
+  background-size: 100% 100%;
 }
