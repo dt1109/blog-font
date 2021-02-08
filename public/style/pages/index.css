@@ -31,7 +31,7 @@
   top:50%;
   left: 0;
 }
-.rotued:hover{
+.rotued :hover{
   transform: rotate(666turn);
   transition-delay: 1s;
   transition-property: all;

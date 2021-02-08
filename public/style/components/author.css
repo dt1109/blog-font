@@ -16,3 +16,9 @@
   margin-left: .5rem;
   margin-right: .5rem;
 }
+.cardqrcode{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 440px !important;
+}

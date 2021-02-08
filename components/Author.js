@@ -1,8 +1,13 @@
-import { Avatar, Divider } from 'antd'
+import { Avatar, Divider ,Popover} from 'antd'
 import React, { useState ,useEffect,useRef} from 'react'
 import '../public/style/components/author.css'
 import '../styles/animation.css'
 
+const content = (
+  <div>
+      <img src ="/img/qw7.png"></img>
+  </div>
+);
 
 const Author = (callback, delay) => {
   function useInterval(callback, delay) {
@@ -26,15 +31,15 @@ const Author = (callback, delay) => {
     // debugger
    setCount(count + 1)
    document.getElementById("test").innerText = text.substr(0, count);
-   console.log(1)
+  //  console.log(1)
    if(count > 31){
    
       setCount(count =>{
         // debugger
-        // count = 0
-        // for(var i = 1; i < 35; i++) {
-        //   // clearInterval(i);
-        //   }
+        count = 0
+        for(var i = 1; i < 35; i++) {
+          clearInterval(i);
+          }
       })
      
     // for(var i = 1; i < 35; i++) {
@@ -74,9 +79,13 @@ const Author = (callback, delay) => {
       <div className="author-introduction">
        <div id="test"></div> 
               <Divider><span className='postTitless'>社交账号</span></Divider>
-        <Avatar size={28} icon="github" className="account" />
-        <Avatar size={28} icon="qq" className="account" />
-        <Avatar size={28} icon="wechat" className="account" />
+       <a href="https://github.com/dt1109/"><Avatar size={28} icon="github" className="account"  srcSet="https://github.com/dt1109/"/></a>
+       <Popover content={content} title="qq二维码" overlayClassName="cardqrcode">
+        <Avatar size={28} icon="qq" className="account accounthover" />
+        </Popover>
+        <Popover content={content} title="wx二维码" overlayClassName="cardqrcode">
+        <Avatar size={28} icon="wechat" className="account accounthover" />
+        </Popover>
       </div>
     </div>
   )
